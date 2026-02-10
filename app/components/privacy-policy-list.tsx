@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from 'app/components/image'
 import { formatDate, getPrivacyPolicies } from 'app/privacy-policy/utils'
 
 export function PrivacyPolicyList() {

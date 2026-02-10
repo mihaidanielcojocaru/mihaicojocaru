@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'app/components/image'
 import { HomeProjects } from 'app/components/home-projects'
 
 export default function Page() {

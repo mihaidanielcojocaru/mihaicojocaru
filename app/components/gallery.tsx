@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'app/components/image'
 
 export function Gallery({ images }: { images: string[] }) {
     return (

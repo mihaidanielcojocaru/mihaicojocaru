@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from 'app/components/image'
 import { formatDate, getTermsOfServices } from 'app/terms-of-service/utils'
 
 export function TermsOfServiceList() {

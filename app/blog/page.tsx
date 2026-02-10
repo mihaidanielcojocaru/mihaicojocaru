@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getBlogPosts } from 'app/blog/utils'
-import Image from 'next/image'
+import Image from 'app/components/image'
 
 export const metadata = {
     title: 'Blog',

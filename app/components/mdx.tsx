@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Gallery } from './gallery'
-import Image from 'next/image'
+import Image from 'app/components/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'

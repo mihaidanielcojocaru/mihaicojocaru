@@ -3,7 +3,7 @@ import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getTermsOfServices } from 'app/terms-of-service/utils'
 import { baseUrl } from 'app/sitemap'
 import { LanguageSelector } from 'app/components/language-selector'
-import Image from 'next/image'
+import Image from 'app/components/image'
 
 export async function generateStaticParams() {
     let posts = getTermsOfServices()

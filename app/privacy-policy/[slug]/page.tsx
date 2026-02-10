@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'app/components/image'
 import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getPrivacyPolicies } from 'app/privacy-policy/utils'
