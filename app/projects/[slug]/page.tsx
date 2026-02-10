@@ -26,7 +26,7 @@ export function generateMetadata({ params }) {
   } = post.metadata
   let ogImage = image
     ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+    : `${baseUrl}/me.jpg`
 
   const alternates = post.slug.startsWith('rider-weather') ? {
     canonical: `${baseUrl}/projects/${post.slug}`,
@@ -87,7 +87,7 @@ export default function Project({ params }) {
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+              : `${baseUrl}/me.jpg`,
             url: `${baseUrl}/projects/${post.slug}`,
             author: {
               '@type': 'Person',
