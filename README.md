@@ -18,3 +18,10 @@ Install dependencies, then run Next.js in development mode:
 npm install
 npm run dev
 ```
+
+## GitHub Pages
+
+This project is configured for static export and plain `<img>` tags.
+
+- For custom domains or `username.github.io`: leave `PAGES_BASE_PATH` unset.
+- For project pages (`username.github.io/repo`): set repository variable `PAGES_BASE_PATH` to `/<repo>`.

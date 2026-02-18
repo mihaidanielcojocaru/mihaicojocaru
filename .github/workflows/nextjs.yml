@@ -56,11 +56,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
+          # Keep Next.js Pages integration enabled.
           static_site_generator: next
+      - name: Set base path for Pages
+        shell: bash
+        run: |
+          if [ -n "${{ vars.PAGES_BASE_PATH }}" ]; then
+            echo "Using PAGES_BASE_PATH from repository variables"
+            echo "NEXT_PUBLIC_BASE_PATH=${{ vars.PAGES_BASE_PATH }}" >> $GITHUB_ENV
+          else
+            echo "No PAGES_BASE_PATH set, defaulting to root"
+            echo "NEXT_PUBLIC_BASE_PATH=" >> $GITHUB_ENV
+          fi
       - name: Restore cache
         uses: actions/cache@v4
         with:
