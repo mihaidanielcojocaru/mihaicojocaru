@@ -55,9 +55,6 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Keep Next.js Pages integration enabled.
-          static_site_generator: next
       - name: Set base path for Pages
         shell: bash
         run: |
